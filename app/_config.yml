@@ -16,6 +16,6 @@ include:
   - _redirects
 
 # variables
-edit_url: # edit url goes here
+edit_url: "https://airtable.com/app8vyReSVIHIpnG5/tbloujasvqIeldSVb/viw5ukuWzl3zqbJBr?blocks=hide" # edit url goes here
 displayed_fields: "terms_of_use, description, last_edit, location, contact_info" # displayed fields go here (leave out title, location, tags -- )
 background_color: 'aliceblue'
