@@ -1,4 +1,4 @@
-title: Site title
+title: Housing Data Portal Index
 description: >- # this means to ignore newlines until "baseurl:"
 
 # Build settings
@@ -18,3 +18,4 @@ include:
 # variables
 edit_url: # edit url goes here
 displayed_fields: "terms_of_use, description, last_edit, location, contact_info" # displayed fields go here (leave out title, location, tags -- )
+background_color: 'aliceblue'
