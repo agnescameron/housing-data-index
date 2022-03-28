@@ -9,7 +9,7 @@ on:
 
 env:
   # to edit
-  remote: # change this to your repo
+  remote: "agnescameron/housing-data-index/" # change this to your repo
 
   # these can stay the same -- you can add multiple different folders for
   # md input if you like, separate by semicolon

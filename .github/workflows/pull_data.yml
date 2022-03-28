@@ -2,20 +2,20 @@ name: pull_data
 
 on:
   schedule:
-  - cron: "0 0 29 2 1" # this won't run till 2044, change it when you're ready
+  - cron: "* * * * *" # this won't run till 2044, change it when you're ready
 
   ## uncomment this one for debugging (will run each time you push a change)
-  # push:
-  #   branches:
-  #     - main
+  push:
+    branches:
+      - main
 
 env:
   # edit these:
-  INPUT_CREDS: #airtable API key, begins with 'key'
-  BASE_ID: #id of airtable base, begins with 'app'
-  TABLE_ID: #id of airtable table, begins with 'tbl'
-  TABLE_NAME: #whatever you want your CSV file to be called
-  remote: # change this to your repo
+  INPUT_CREDS: "keyG3kULvc1nh0AtL" #airtable API key, begins with 'key'
+  BASE_ID: "app8vyReSVIHIpnG5" #id of airtable base, begins with 'app'
+  TABLE_ID: "tbloujasvqIeldSVb" #id of airtable table, begins with 'tbl'
+  TABLE_NAME: "Housing Data" #whatever you want your CSV file to be called
+  remote: "agnescameron/housing-data-index/" # change this to your repo
 
   # these guys can stay as default unless you want to change:
   ARCHIVE_DIR: "index_archive" #this is the default home for csv files

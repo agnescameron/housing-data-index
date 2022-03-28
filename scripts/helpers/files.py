@@ -49,9 +49,6 @@ def update_markdown(data, directory):
 					if "related_project_shortnames" in row and row["related_project_shortnames"].strip():
 						record["relationships"] = list(map(lambda tag: tag.strip(), row["related_project_shortnames"].split(',')))
 
-					if "tags" in row and row["tags"].strip():
-						record["tags"] = list(map(lambda tag: tag.strip(), row["tags"].split(',')))
-
 			update_frontmatter(record, filepath)
 
 
@@ -103,9 +100,6 @@ def generate_markdown(data, directory):
 
 		if "related_project_shortnames" in row and row["related_project_shortnames"].strip():
 			record["relationships"] = list(map(lambda tag: tag.strip(), row["related_project_shortnames"].split(',')))
-
-		if "tags" in row and row["tags"].strip():
-			record["tags"] = list(map(lambda tag: tag.strip(), row["tags"].split(',')))
 
 		update_frontmatter(record, filepath)
 
