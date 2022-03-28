@@ -1,0 +1,20 @@
+title: Site title
+description: >- # this means to ignore newlines until "baseurl:"
+
+# Build settings
+plugins:
+  - jekyll-feed
+
+collections_dir: index
+emptyArray: []
+
+collections:
+  entries:
+    output: true
+
+include:
+  - _redirects
+
+# variables
+edit_url: # edit url goes here
+displayed_fields: "terms_of_use, description, last_edit" # displayed fields go here (leave out title, location, tags -- )
